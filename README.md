@@ -1,5 +1,5 @@
 # css-grid-refresh
-CSS cardio excercises using various reference for the examples
+CSS cardio excercises using various references for the examples
 
 # Grid By Example by Rachel Andrew
 https://gridbyexample.com
