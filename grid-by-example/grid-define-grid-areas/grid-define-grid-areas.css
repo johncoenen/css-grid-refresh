@@ -1,4 +1,9 @@
-/* Defining Grid Areas */
+/* No Clearing Required 
+**
+** Elements can't jump to different tracks, 
+** they stay put, 
+** so clearing with floats is not required
+*/
 
 body {
     margin: 40px;
@@ -16,13 +21,18 @@ body {
   grid-area: header;
 }
 
+.footer {
+  grid-area: footer;
+}
+
 .wrapper {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 120px 120px 120px;
   grid-template-areas: 
   "....... header header"
-  "sidebar content content";
+  "sidebar content content"
+  "footer footer footer";
   background-color: #fff;
   color: #444;
 }
@@ -31,7 +41,7 @@ body {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   font-style: 150%;
 }
 

@@ -1,0 +1,58 @@
+/* Hip Hop Styles */
+
+
+/*=============================
+  grid set up
+===============================*/
+
+/* default grid, mobile first */
+body {
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 90px;
+  grid-template-areas: "content"
+                       
+                       "footer";
+}
+
+.main {
+background-color: #808d94;
+grid-area: content;
+}
+
+.footer {
+background-color: #FF8A65;
+grid-area: footer;
+}
+
+.aside {
+background-color: #e1eff7;
+grid-area: sidebar;
+}
+
+.aside i {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: "sidebar content"
+                         "footer  footer";
+  }
+
+  .aside {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .aside i {
+    display: block;
+    /*
+    border: 1px solid cornflowerblue;
+    */
+  }
+}
