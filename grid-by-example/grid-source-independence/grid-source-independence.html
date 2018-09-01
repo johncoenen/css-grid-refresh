@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="grid-source-independence.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- TODO: replicate the header and note areas in the other grid-by-example files -->
+  <!-- Header Section -->
+  <div class="header">
+      <h1>Source Independence</h1>
+      <p>The order of items in the source does not matter. However, they need to be child elements of the element declared as grid. This example has content and ads. The ads are placed beneath the source. Grid is used to show the ads between sections. Even though it is below the content sections in the source!</p>
+      <p>
+        <b>
+          Accessibility Note:Logical order should be set in the source. In other words, don't use grid properties to set the logical order of a document.
+        </b>
+    </p>
+  </div>
+  <!-- Source Independence Example -->
+  <div class="wrapper">
+    <div class="section1">
+      <p>
+        Today his name is an eponym for his famed “invention drawings,” designs of overly complicated machines: using things like pulleys, levers, birds, and rockets to fix simple problems like fishing an olive out of a tall jar, or remembering to mail a letter to your wife. Goldberg approached them as a tongue-in-cheek critique of the havoc wrought by industrialization and put forward the idea that technology, intended to simplify people’s lives could have the opposite effect.
+      </p>      
+    </div>
+    <div class="section2">
+      <p>
+       Goldberg, a San Francisco native who studied engineering at University of California, Berkeley, is, according to his estate, the only person whose name is used as an adjective in the dictionary. As early as 1931, the Merriam-Webster Dictionary defined “Rube Goldberg” as “accomplishing by complex means what seemingly could be done simply.”
+      </p>
+    </div>
+      <div class="section3">
+        <p>
+         Goldberg, a San Francisco native who studied engineering at University of California, Berkeley, is, according to his estate, the only person whose name is used as an adjective in the dictionary. As early as 1931, the Merriam-Webster Dictionary defined “Rube Goldberg” as “accomplishing by complex means what seemingly could be done simply.”
+        </p>
+      </div>
+      <div class="box ad1">Rad Ads Rad Ads Rad Ads</div>
+      <div class="box ad2">Rad Ads Rad Ads Rad Ads</div>
+  </div>
+  
+</body>
+</html>
