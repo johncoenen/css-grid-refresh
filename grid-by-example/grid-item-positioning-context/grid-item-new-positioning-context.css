@@ -1,0 +1,75 @@
+/* Grid item new positioning context */
+
+body {
+    margin: 40px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+    /* RELATIVE POSITION */
+    position: relative;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; 
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 150%;
+}
+
+.header,
+.footer {
+    background-color: #999;
+}
+
+/* ABOSOLUTE POSITIONING */
+.topleft {
+    position: absolute;
+    top: 0;
+    top: 0;
+}
+
+.topright {
+    position: absolute;
+    top: 0;
+    top: 0;
+}
+
+.bottomleft {
+    position: absolute;
+    top: 0;
+    top: 0;
+}
+
+.bottomright {
+    position: absolute;
+    top: 0;
+    top: 0;
+}
+
+
