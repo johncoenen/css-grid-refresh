@@ -1,0 +1,29 @@
+/* Grid auto-flow column */
+
+body {
+    margin: 40px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box:nth-child(even) {
+  background-color: #000;
+  color: rgb(196, 209, 219);
+  /*This contrast of color does not work. Even though they seem similar, they display differently and it is hard on the eyes. It does not flow well.*/
+}
+
+.wrapper {
+    width: 600px;
+    display: grid;    
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 100px); 
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+}
+
